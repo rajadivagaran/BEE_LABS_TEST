@@ -1,0 +1,36 @@
+﻿#include<stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    int num;
+    printf("Number :");
+    scanf("%d",&num);
+    int sum,temp,rem;
+    while(num>=10)
+    {
+        sum=0;
+        temp=num;
+        while(temp>0)
+        {
+            rem=temp%10;
+            sum=sum+rem;
+            temp=temp/10;
+        }
+        num=sum;
+    }
+    printf("\nOutput : %d",num);
+
+
+
+
+}
+
+
+
+
+
+
+Number :9829
+Output : 1

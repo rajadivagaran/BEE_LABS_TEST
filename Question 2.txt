@@ -1,0 +1,54 @@
+﻿#include<stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    int num,i=0,count=-1;
+    int array[100];
+    while(scanf("%d",&num)>0)
+    {
+        array[i]=num;
+        i++;
+        count++;
+    }
+    int flag;
+    int start=array[0],end=array[count];
+    for(int j=start;j<=end;j++)
+    {
+        flag=0;
+        for(int k=0;k<=count;k++)
+        {
+            if(j==array[k])
+            {
+                flag=1;
+            }
+        }
+        if(flag==0)
+        {
+            printf("%d",j);
+        }
+    }
+
+
+
+
+}
+
+
+
+
+
+
+Your Input
+
+
+	11 12 13 14 15 16 18 19 20
+
+
+
+
+
+
+Your Program Output:
+17

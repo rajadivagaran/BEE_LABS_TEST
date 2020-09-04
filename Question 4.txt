@@ -1,0 +1,46 @@
+﻿#include<stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    int X,Y;
+    int count=0;
+    printf("Starting Range :");
+    scanf("%d",&X);
+    printf("\nEnding Range :");
+    scanf("%d",&Y);
+    int temp,num;
+    for(int i=X;i<=Y;i++)
+    {
+        num=i;
+        while(num>0)
+        {
+            temp=num%10;
+            if(temp==1)
+            {
+                count++;
+            }
+            num=num/10;
+        }
+    }
+    printf("\n%d",count);
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+Your Program Output:
+Starting Range :1
+Ending Range :20
+12

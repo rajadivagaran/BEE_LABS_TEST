@@ -1,0 +1,44 @@
+﻿#include<stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    char a[1000];
+    int count=0,i=0;
+    printf("Write something about BEEZ LABS");
+    while(scanf("%c",&a[i])>0)
+    {
+        i++;
+        count++;
+    }
+    printf("\nNumber of Characters : %d",count-1);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+A Cloud edge platform that helps combine AI & Automation, makes automation possible across user communities, adapting to new ways of work - anytime, anywhere, any device. 
+
+
+
+
+
+
+
+
+
+
+Your Program Output:
+Write something about BEEZ LABS
+Number of Characters : 171

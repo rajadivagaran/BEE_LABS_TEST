@@ -1,0 +1,37 @@
+﻿#include<stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    int X,Y;
+    printf("Enter X and Y");
+    scanf("%d\n%d",&X,&Y);
+    printf("\nBefore Swapping");
+    printf("\nX=%d\nY=%d",X,Y);
+    X=X+Y;
+    Y=X-Y;
+    X=X-Y;
+    printf("\nAfter Swapping Without A Third Variable");
+    printf("\nX=%d\nY=%d",X,Y);
+
+
+
+
+}
+
+
+
+
+
+
+Your Program Output:
+Enter X and Y
+90
+43
+Before Swapping
+X=90
+Y=43
+After Swapping Without A Third Variable
+X=43
+Y=90
