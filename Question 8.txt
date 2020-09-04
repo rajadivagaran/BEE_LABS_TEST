@@ -1,0 +1,75 @@
+﻿#include<stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    int n;
+    printf("Enter the number of Student : ");
+    scanf("%d",&n);
+    int Q1,Q2,Q3,Q4,Q5;
+    int H1,H2,H3,H4,H5;
+    for(int i=1;i<=n;i++)
+    {
+        printf("\nEnter student %d Quarterly Marks :",i);
+        printf("\nEnglish-");
+        scanf("%d",&Q1);
+        printf("\nTamil-");
+        scanf("%d",&Q2);
+        printf("\nMath-");
+        scanf("%d",&Q3);
+        printf("\nScience-");
+        scanf("%d",&Q4);
+        printf("\nSocialScience-");
+        scanf("%d",&Q5);
+        printf("\nEnter student %d Half yearly Marks",i);
+        printf("\nEnglish-");
+        scanf("%d",&H1);
+        printf("\nTamil-");
+        scanf("%d",&H2);
+        printf("\nMath-");
+        scanf("%d",&H3);
+        printf("\nScience-");
+        scanf("%d",&H4);
+        printf("\nSocialScience-");
+        scanf("%d",&H5);
+        printf("\nAverage of student %d",i);
+        printf("\nEnglish-%.2f",(Q1+H1)/2.0);
+        printf("\nTamil-%.2f",(Q2+H2)/2.0);
+        printf("\nMath-%.2f",(Q3+H3)/2.0);
+        printf("\nScience-%.2f",(Q4+H4)/2.0);
+        printf("\nSocialScience-%.2f",(Q5+H5)/2.0);
+    }
+
+
+
+
+}
+
+
+
+
+OUTPUT:
+
+
+
+
+Enter the number of Student : 1
+Enter student 1 Quarterly Marks :
+English-100
+Tamil-98
+Math-97
+Science-100
+SocialScience-97
+Enter student 1 Half yearly Marks
+English-98
+Tamil-96
+Math-99
+Science-100
+SocialScience-100
+Average of student 1
+English-99.00
+Tamil-97.00
+Math-98.00
+Science-100.00
+SocialScience-98.50
